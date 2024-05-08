@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jet_Airlines : Beyond Horizons, Transcending Skies on Every Journey</title>
+    <link rel="stylesheet" type="text/css" href="css\JetAirlinesMainHP.css">
+</head>
+<body>
+    <header>
+        <div class="topbar">
+            <div class="navMenu">
+                <div class="logo">
+                    <a href="#"><!--메인화면 이동 링크-->
+                        <img src="HomepageImage\logo.png">
+                    </a>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">항공권예매
+                    </button>
+                    <div class="dropdownMenu">
+                        <a href="#">항공권 예매</a>
+                        <a href="#">단체 예매(10인 이상)</a>
+                        <a href="#">항공권 선물하기</a>
+                        <a href="#">이용 안내</a>
+                        <a href="#">전자 항공권</a>
+                        <a href="#">항공권 재발행</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">예매 조회</button>
+                    <div class="dropdownMenu">
+                        <a href="#">나의 여정</a>
+                        <a href="#">여정 변경</a>
+                        <a href="#">여정 취소</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">멤버십
+                    </button>
+                    <div class="dropdownMenu">
+                        <a href="#">제트 멤버십 혜택</a>
+                        <a href="#">제트 멤버십 가입</a>
+                        <a href="#">멤버십 가입 해지</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">온라인면세점
+                    </button>
+                    <div class="dropdownMenu">
+                        <a href="#">공항별 면세점 위치</a>
+                        <a href="#">Jet Shop</a>
+                        <a href="#">면세점 이용 안내</a>
+                    </div>
+                </div>
+                <div class="rightMenu">
+                    <button href="#">로그인</button>
+                    <span>&nbsp|&nbsp</span>
+                    <div class="dropdown">
+                        <button class="dropdownMen">한국어 / Korean ▼</button>
+                        <div class="dropdownMenu">
+                            <a href="#">한국어</a>
+                            <a href="#">English</a>
+                            <a href="#">日本語</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="slide">
+            <ul class="slider-container">
+                <li class="slide1">
+                    <img alt="" src="HomepageImage\mainimage1.png">
+                </li>
+                <li class="slide2">
+                    <img alt="" src="HomepageImage\mainimage2.png">
+                </li>
+                <li class="slide3">
+                    <img alt="" src="HomepageImage\mainimage3.png">
+                </li>
+                <li class="slide4">
+                    <img alt="" src="HomepageImage\mainimage4.png">
+                </li>
+                <li class="slide5">
+                    <img alt="" src="HomepageImage\mainimage5.png">
+                </li>
+            </ul>
+        </div>
+        <div>
+            <div class="controlRemort">
+                <a class="prev" id="" href="#"><span> < </span></a>
+                <a class="next" href="#"><span> > </span></a>
+            </div>
+            <div class="searchFlightsArea">
+                <div class="firstLine">
+                    <div class="firstLineRight">
+                        <div class="roundTripSelect">
+                            <input type="checkbox" id="checkboxSwitch" class="checkboxSwitch"><!--왕복_편도 스위치-->
+                            <label class="switch" for="checkboxSwitch">
+                                <span></span>
+                            </label>
+                        </div>
+                        <div class="freeTrip">
+                            <input type="checkbox" id="checkFreeTrip" class="checkFreeTrip">
+                            <label for="checkFreeTrip" class="freeTripCheckbox"></label>
+                        </div>
+                        <div id="inputPeople" class="inputPeople">
+                            <p class="insertPeople">성인</p>
+                            <input type="text" class="nmbPeople" placeholder="0">
+                        </div>
+                        <div id="inputPeople" class="inputPeople">
+                            <p class="insertPeople">소아</p>
+                            <input type="text" class="nmbPeople" placeholder="0">
+                        </div>
+                        <div id="inputPeople" class="inputPeople">
+                            <p class="insertPeople">유아</p>
+                            <input type="text" class="nmbPeople" placeholder="0">
+                        </div>
+                    </div>
+                    <div class="firstLineLeft">
+                        <input type="checkbox" id="mileage" class="mileage"><!--마일리지-->
+                        <label for="mileage" class="mileageCheck"></label>
+                        <input type="button" class="searchTicket" value="항공권 검색"></button><!--항공권 검색-->
+                    </div>
+                </div><br>
+                <div class="secondLine">
+                    <div class="departure">
+                        <p class="selectCltyText">출발지</p>
+                        <input class="selectCltyIcon" type="text" placeholder="출발지">
+                    </div>
+                    <div class="arrival">
+                        <p class="selectCltyText">도착지</p>
+                        <input class="selectCltyIcon" type="text" placeholder="도착지">
+                    </div>
+                    <div class="departure-date">
+                        <p class="calenderText">가는날</p>
+                        <input class="calendarIcon" type="date" data-placeholder="출국일" required><!--가는날 날짜 선택-->
+                    </div>
+                    <div class="return-date">
+                        <p class="calenderText">오는날</p>
+                        <input class="calendarIcon" type="date" data-placeholder="귀국일" required><!--오는날 날짜 선택-->
+                    </div>
+                </div>
+            </div>
+            <!------------------------------------------------------------>
+            <div class="additionalServise">
+                <p class="serviseTitle">부가 서비스</p>
+                <div class="serviseMenu">
+                    <a href="#" title="제휴카드 안내">
+                        <img class="serviseMenuIcon"
+                            src="HomepageImage\cardImg_hover.png">
+                        <img class="serviseMenuHoverIcon"
+                            src="HomepageImage\cardImg.png">
+                        <p>제휴카드</p>
+                    </a>
+                    <a href="#" title="수화물 추가 페이지 이동">
+                        <img class="serviseMenuIcon"
+                            src="HomepageImage\carryer_hover.png">
+                        <img class="serviseMenuHoverIcon"
+                            src="HomepageImage\carryer.png">
+                        <p>수화물 추가</p>
+                    </a>
+                    <a href="#" title="좌석 지정 페이지 이동">
+                        <img class="serviseMenuIcon"
+                            src="HomepageImage\Group 28_hover.png">
+                        <img class="serviseMenuHoverIcon"
+                            src="HomepageImage\Group 28.png">
+                        <p>좌석 지정</p>
+                    </a>
+                    <a href="#" title="기내식 신청 페이지 이동">
+                        <img class="serviseMenuIcon"
+                            src="HomepageImage\Group 29_hover.png">
+                        <img class="serviseMenuHoverIcon"
+                            src="HomepageImage\Group 29.png">
+                        <p>기내식 신청</p>
+                    </a>
+                    <a href="#" title="면세품 관련 안내 이동">
+                        <img class="serviseMenuIcon"
+                            src="HomepageImage\Group 32_hover.png">
+                        <img class="serviseMenuHoverIcon"
+                            src="HomepageImage\Group 32.png">
+                        <p>면세품</p>
+                    </a>
+                </div>
+            </div>
+            <!------------------------------------------------------------>
+            <div class="AffiliateServise">
+                <p class="serviseTitle">제휴 서비스</p>
+                <div class=serviseMenu>
+                    <a href="#" title="여행자 보험 제휴 페이지 이동">
+                        <img class="serviseMenuIcon"
+                            src="HomepageImage\carryer_icon_hover.png">
+                        <img class="serviseMenuHoverIcon"
+                            src="HomepageImage\carryer_icon.png">
+                        <p>여행자 보험</p>
+                    </a>
+                    <a href="#" title="호텔 제휴 페이지">
+                        <img class="serviseMenuIcon"
+                            src="HomepageImage\Hotel_icon_hover.png">
+                        <img class="serviseMenuHoverIcon"
+                            src="HomepageImage\Hotel_icon.png">
+                        <p>호텔</p>
+                    </a>
+                    <a href="#" title="액티비티 제휴 페이지">
+                        <img class="serviseMenuIcon"
+                            src="HomepageImage\Group 36_hover.png">
+                        <img class="serviseMenuHoverIcon"
+                            src="HomepageImage\Group 36.png">
+                        <p>액티비티</p>
+                    </a>
+                    <a href="#" title="통신사 제휴 페이지">
+                        <img class="serviseMenuIcon"
+                            src="HomepageImage\SIM_icon_hover.png">
+                        <img class="serviseMenuHoverIcon"
+                            src="HomepageImage\SIM_icon.png">
+                        <p>통신</p>
+                    </a>
+                    <a href="#" title="렌터카 제휴 페이지">
+                        <img class="serviseMenuIcon"
+                            src="HomepageImage\Car_icon_hover.png">
+                        <img class="serviseMenuHoverIcon"
+                            src="HomepageImage\Car_icon.png">
+                        <p>렌터카</p>
+                    </a>
+                </div>
+            </div>
+            <!------------------------------------------------------------>
+            <div class="airlineGuide">
+                <p class="serviseTitle">항공 이용 가이드</p>
+                <div class="airlineGuideMenu">
+                    <a href="#" title="수화물 가이드 페이지">
+                        <figure><img class="airlineGuideImage"
+                                src="HomepageImage\flight_guide2_image.png">
+                        </figure>
+                        <div class="imageText">여행 전 확인 / 수화물 가이드</div>
+                    </a>
+                    <a href="#" title="수속 절차 페이지">
+                        <figure><img class="airlineGuideImage"
+                                src="HomepageImage\flight_guide_image.png">
+                        </figure>
+                        <div class="imageText">공항 도착 후 수속 절차</div>
+                    </a>
+                </div>
+            </div>
+            <!------------------------------------------------------------>
+            <div class="travelGuide">
+                <p class="serviseTitle">제트 항공과 함께하는 특별한 서울 여행</p>
+                <div class="seoulTourList">
+                    <div>
+                        <img class="seoulTour"
+                            src="HomepageImage\changdukgung.jpeg">
+                        <a href="#" title="경복궁 페이지">
+                            <span class="tourInformation1">
+                                <p class="tourInfoTitle">JetAirlines과 함께하는 한국여행#1
+                                <p>
+                                <h4 class="tourInfo">한국 역사와 전통의 상징, 경복궁</h4>
+                                <h4 class="tourInfo">역사 속으로 여행을 떠날 시간입니다!</h4>
+                            </span>
+                        </a>
+                    </div>
+                    <div>
+                        <img class="seoulTour"
+                            src="HomepageImage\namsantower.jpg">
+                        <a href="#" title="남산 타워 페이지">
+                            <span class="tourInformation2">
+                                <p class="tourInfoTitle">JetAirlines과 함께하는 한국여행#2
+                                <p>
+                                <h4 class="tourInfo">서울을 남산타워에서 한눈에!</h4>
+                                <h4 class="tourInfo">서울의 도심을 내려다보세요.</h4>
+                            </span>
+                        </a>
+                    </div>
+                    <div>
+                        <img class="seoulTour"
+                            src="HomepageImage\visual_mb.jpg">
+                        <a href="#" title="청계천 페이지">
+                            <span class="tourInformation3">
+                                <p class="tourInfoTitle">JetAirlines과 함께하는 한국여행#3
+                                <p>
+                                <h4 class="tourInfo">서울을 가로지르는 청계천</h4>
+                                <h4 class="tourInfo">바쁜 여행, 활기찬 도심 속 휴식</h4>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!------------------------------------------------------------>
+            <div class="notice">
+                <ul>
+                    <div class="noticeMenu">
+                        <a class="notices">공지사항</a>
+                        <a href="#" class="moreView">더보기</a>
+                    </div>
+                    <div class="noticeList">
+                        <div class="noticeList_L">
+                            <li>
+                                <span class="noticeLabel">[중요]</span>
+                                <a class="noticeTitel" href="#"> 취향지 출입국 규정 안내(4/1기준)</a>
+                                <a class="writeDate">2024-04-17</a>
+                            </li>
+                            <li>
+                                <span class="noticeLabel">[중요]</span>
+                                <a class="noticeTitel" href="#">여정 변경, 취소 수수료 규정</a>
+                                <a class="writeDate">2024-04-17</a>
+                            </li>
+                            <li>
+                                <span class="noticeLabel">[중요]</span>
+                                <a class="noticeTitel" href="#">수화물 규정</a>
+                                <a class="writeDate">2024-04-17</a>
+                            </li>
+                            <li>
+                                <span class="noticeLabel">[중요]</span>
+                                <a class="noticeTitel" href="#">외부 사이트를 통해 구매한 항공권 안내</a>
+                                <a class="writeDate">2024-04-17</a>
+                            </li>
+                        </div>
+                        <div class="noticeList_R">
+                            <li>
+                                <span class="noticeLabel">[중요]</span>
+                                <a class="noticeTitel" href="#">서울 - 평양 신규 취향</a>
+                                <a class="writeDate">2024-04-17</a>
+                            </li>
+                            <li>
+                                <span class="noticeLabel">[중요]</span>
+                                <a class="noticeTitel" href="#">평양 진입 중, 적 선제타격 시 대응 메뉴얼</a>
+                                <a class="writeDate">2024-04-17</a>
+                            </li>
+                            <li>
+                                <span class="noticeLabel">[중요]</span>
+                                <a class="noticeTitel" href="#">공항 별 카운터 위치</a>
+                                <a class="writeDate">2024-04-17</a>
+                            </li>
+                            <li>
+                                <span class="noticeLabel">[중요]</span>
+                                <a class="noticeTitel" href="#">이 홈페이지는 실제 홈페이지가 아닙니다.</a>
+                                <a class="writeDate">2024-04-17</a>
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <!------------------------------------------------------------>
+    </main>
+    <footer>
+        <div class="footerInfos">
+            <div class="fooerInfo">
+                <p class="footerInfoTitle">예약센터</p>
+                <p>1234-5678</p>
+                <p>00:00 ~ 24:00</p>
+                <p>연중휴무</p>
+            </div>
+            <div class="fooerInfo">
+                <p class="footerInfoTitle">고객센터</p>
+                <p>5678-9123</p>
+                <p>00:00 ~ 24:00</p>
+                <p>연중휴무</p>
+            </div>
+            <div class="fooerInfo">
+                <p class="footerInfoTitle">점검시간</p>
+                <strong><span>월~금</span> </strong>
+                <span>00:00 ~ 24:00</span>
+                <br>
+                <strong><span>토~일</span></strong>
+                <span>00:00 ~ 24:00</span>
+                <p>(한국시간 기준)</p>
+            </div>
+            <div class="fooerInfo">
+                <p class="footerInfoTitle">마케팅/광고 문의</p>
+                <p>gh1065@naver.com</p>
+                <p>디자이너 이메일</p>
+            </div>
+            <div class="fooerInfoSns">
+                <div class="snsIcon">
+                    <a href="#">
+                        <img src="HomepageImage\instagram.png">
+                        <p>@gwanho_yun98</p>
+                    </a>
+                </div>
+                <div class="snsIcon">
+                    <a href="#">
+                        <img src="HomepageImage\youtube.png">
+                        <p>Jet_Airlines</p>
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="footerLinks">
+            <div class="links">
+                <a href="#">
+                    <p>회사안내</p>
+                </a>
+                <a href="#">
+                    <p>보도자료</p>
+                </a>
+                <a href="#">
+                    <p>채용정보</p>
+                </a>
+                <a href="#">
+                    <p>운송약관</p>
+                </a>
+                <a href="#">
+                    <p>이용약관</p>
+                </a>
+                <a href="#">
+                    <p>개인정보이용안내</p>
+                </a>
+            </div>
+            <div class="companyInfo">
+                <p>JetAirlines㈜ 대표이사 곽두팔 사랑시 고백구 행복동 (우)12345</p>
+                <p>개인정보보호책임자 강백호</p>
+                <p>온라인 마케팅 팀장 김청룡</p>
+                <p>Copyright 2024 BY ZET AIRLINES. All Rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script rel="javascript" type="text/javascript" src="javascript/JetAirlinesMainHP.js">
+    </script>
+</body>
+</html>
+</body>
+n
+</html>
